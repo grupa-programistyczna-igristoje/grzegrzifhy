@@ -1,0 +1,99 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <time.h>
+
+using namespace std;
+
+int granie()
+{
+    int pieniadze=100; int kwota; int kon; int wygrany; int przegrany;
+  cout<<" _______________________"<<endl;
+  cout<<"|    TWOJE PIENIADZE:   |"<<endl;
+  cout<<"|          "<<pieniadze<<"          |"<<endl;
+  cout<<"|     OBSTAW KONIA:     |"<<endl;
+  cout<<"|       1.RAFAL         |"<<endl;
+  cout<<"|       2.ANDRZEJ       |"<<endl;
+  cout<<"|       3.STEFAN        |"<<endl;
+  cout<<"|       4.ZYGMUNT       |"<<endl;
+  cout<<"|_______________________|"<<endl;
+
+  cin>>kon;
+  switch(kon)
+  {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        {
+         cout<<"PODAJ KWOTE PIENIEZNA"<<endl;
+         cin>>kwota;
+         pieniadze = pieniadze - kwota;
+        }
+        break;
+
+        default: cout<<"NIE MA TAKIEGO KONIA WCISNIJ ENTER ABY POWROCIC DO WYBORU KONIA"<<endl; getchar(); getchar(); granie(); break;
+
+  }
+
+
+
+}
+
+int main()
+{
+   for (;;)
+    {
+    int wybor;
+
+  cout<<" _______________________"<<endl;
+  cout<<"|     WYSCIGI KONNE     |"<<endl;
+  cout<<"|       1.GRAJ          |"<<endl;
+  cout<<"|       2.ZASADY        |"<<endl;
+  cout<<"|       3.AUTORZY       |"<<endl;
+  cout<<"|       4.WYJSCIE       |"<<endl;
+  cout<<"|_______________________|"<<endl;
+
+  cin>>wybor;
+
+
+
+  switch(wybor)
+  {
+      case 1: granie(); break;
+      case 2:
+        {
+            system("cls");
+            cout<<"Masz na start 100 zlotych, ktore mozesz wydac na obstawienie dowolnego konia."<<endl;
+            cout<<"Mozesz postawic tylko jednego konia"<<endl;
+            cout<<"Mozesz postawic na konia za dowolna kwote"<<endl;
+            cout<<"Gdy kon na ktorego postawiles wygra, kwota postawiona przez Ciebie zostanie pomnozona"<<endl;
+            cout<<"Gdy kon na ktorego postawiles przegra, kwota postawiona przez Ciebie zostanie odjeta"<<endl;
+            cout<<"Baw sie dobrze ;)"<<endl;
+            cout<<"A teraz nacisnij enter zeby wrocic do menu";
+            getchar(); getchar();
+            system("cls");
+        }
+        break;
+      case 3:
+          {
+              system("cls");
+          cout<<"Autorem tej wspaniałej gry jest Maciej Grzegrzolka, bez niczyjej pomocy kurcze"<<endl;
+          cout<<"A teraz nacisnij enter zeby wrocic do menu";
+          getchar(); getchar();
+            system("cls");
+          }
+          break;
+      case 4: cout<<"Zegnaj"; Sleep(100); exit(0); break;
+  }
+
+
+}
+
+    return 0;
+
+
+}
