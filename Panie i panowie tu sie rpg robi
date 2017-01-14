@@ -1,0 +1,247 @@
+#include <iostream>
+#include <windows.h>
+#include <cstdlib>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <time.h>
+#include <string>
+#include <algorithm>
+#include <fstream>
+
+using namespace std;
+
+void prolog_roland()
+{
+    cout<<"elo smieciu";
+}
+
+void roland()
+{
+    string zapis1;
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"A WIEC POSTANOWILES GRAC ROLANDEM TA?"<<endl; Sleep(2000); system("cls");
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl; Sleep(500);
+    cout<<"__________________________________"<<endl; Sleep(500);
+    cout<<"              ROLAND              "<<endl; Sleep(500);
+    cout<<"             WOJOWNIK             "<<endl; Sleep(500);
+    cout<<"             POZIOM 1             "<<endl; Sleep(500);
+    cout<<"            *HP: 500              "<<endl; Sleep(500);
+    cout<<"          *ATAK: 10-20            "<<endl; Sleep(500);
+    cout<<"       SZANSA NA BLOK - 20%       "<<endl; Sleep(500);
+    cout<<"*OBRAZENIA ZADAWANE PODCZAS BLOKU "<<endl; Sleep(500);
+    cout<<"               5-10               "<<endl; Sleep(1000);
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"STATYSTYKI BEDA WYSWIETLANE CALY CZAS NA EKRANIE"<<endl;
+    cout<<"CZY CHCESZ ZAPISAC TERAZ STAN GRY? Y/N";
+    zapis1=getch();
+    transform(zapis1.begin(),zapis1.end(), zapis1.begin(),::toupper);
+    if (zapis1=="Y")
+    {
+        /* TUTAJ JEST DO STWORZENIA ZAPIS STANU GRY */
+
+    system("cls");
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl;
+    cout<<"__________________________________"<<endl;
+    cout<<"              ROLAND              "<<endl;
+    cout<<"             WOJOWNIK             "<<endl;
+    cout<<"             POZIOM 1             "<<endl;
+    cout<<"            *HP: 500              "<<endl;
+    cout<<"          *ATAK: 10-20            "<<endl;
+    cout<<"       SZANSA NA BLOK - 20%       "<<endl;
+    cout<<"*OBRAZENIA ZADAWANE PODCZAS BLOKU "<<endl;
+    cout<<"               5-10               "<<endl;
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"STATYSTYKI BEDA WYSWIETLANE CALY CZAS NA EKRANIE"<<endl;
+    cout<<"STAN GRY ZOSTAL ZAPISANY"<<endl;
+    cout<<"WCISNIJ ENTER ABY ZACZAC GRE";
+    getchar();
+    system("cls");
+    prolog_roland();
+    }
+    else if (zapis1=="N")
+    {
+    system("cls");
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl;
+    cout<<"__________________________________"<<endl;
+    cout<<"              ROLAND              "<<endl;
+    cout<<"             WOJOWNIK             "<<endl;
+    cout<<"             POZIOM 1             "<<endl;
+    cout<<"            *HP: 500              "<<endl;
+    cout<<"          *ATAK: 10-20            "<<endl;
+    cout<<"       SZANSA NA BLOK - 20%       "<<endl;
+    cout<<"*OBRAZENIA ZADAWANE PODCZAS BLOKU "<<endl;
+    cout<<"               5-10               "<<endl;
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"STATYSTYKI BEDA WYSWIETLANE CALY CZAS NA EKRANIE"<<endl;
+    cout<<"STAN GRY NIE ZOSTAL ZAPISANY"<<endl;
+    cout<<"WCISNIJ ENTER ABY ZACZAC GRE";
+    getchar();
+    system("cls");
+    prolog_roland();
+    }
+    else
+    {
+        cout<<"NIE MA TAKIEGO WYBORU"<<endl;
+        getchar();
+        system("cls");
+        roland();
+    }
+
+
+}
+
+void prolog_anna()
+{
+    cout<<"elo smieciarzu kutasiarzu";
+}
+
+
+void anna()
+{
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"A WIEC POSTANOWILES GRAC ANNA TA?"<<endl; Sleep(2000); system("cls");
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl; Sleep(500);
+    cout<<"__________________________________"<<endl; Sleep(500);
+    cout<<"               ANNA               "<<endl; Sleep(500);
+    cout<<"             KAPLANKA             "<<endl; Sleep(500);
+    cout<<"             POZIOM 1             "<<endl; Sleep(500);
+    cout<<"            *HP: 300              "<<endl; Sleep(500);
+    cout<<"          *ATAK: 30-60            "<<endl; Sleep(500);
+    cout<<"    SZANSA NA ULECZENIE - 20%     "<<endl; Sleep(500);
+    cout<<"        *LECZONE HP: 20-40        "<<endl; Sleep(1000);
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"CZY CHCESZ ZAPISAC TERAZ STAN GRY? Y/N";
+    zapis1=getch();
+    transform(zapis1.begin(),zapis1.end(), zapis1.begin(),::toupper);
+     if (zapis1=="Y")
+    {
+        /* TUTAJ JEST DO STWORZENIA ZAPIS STANU GRY */
+
+    system("cls");
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl;
+    cout<<"__________________________________"<<endl;
+    cout<<"               ANNA               "<<endl;
+    cout<<"             KAPLANKA             "<<endl;
+    cout<<"             POZIOM 1             "<<endl;
+    cout<<"            *HP: 300              "<<endl;
+    cout<<"          *ATAK: 30-60            "<<endl;
+    cout<<"    SZANSA NA ULECZENIE - 20%     "<<endl;
+    cout<<"        *LECZONE HP: 20-40        "<<endl;
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"STATYSTYKI BEDA WYSWIETLANE CALY CZAS NA EKRANIE"<<endl;
+    cout<<"STAN GRY ZOSTAL ZAPISANY"<<endl;
+    cout<<"WCISNIJ ENTER ABY ZACZAC GRE";
+    getchar();
+    system("cls");
+    prolog_anna();
+    }
+    else if (zapis1=="N")
+    {
+    system("cls");
+    cout<<"AKT 0: POKAZ POSTACI"<<endl;
+    cout<<"OTO TWOJE STATYSTYKI BEDZIESZ MOGL JE ZWIEKSZAC GDY AWANSUJESZ NA KOLEJNY POZIOM"<<endl;
+    cout<<"__________________________________"<<endl;
+    cout<<"               ANNA               "<<endl;
+    cout<<"             KAPLANKA             "<<endl;
+    cout<<"             POZIOM 1             "<<endl;
+    cout<<"            *HP: 300              "<<endl;
+    cout<<"          *ATAK: 30-60            "<<endl;
+    cout<<"    SZANSA NA ULECZENIE - 20%     "<<endl;
+    cout<<"        *LECZONE HP: 20-40        "<<endl;
+    cout<<"STATYSTYKI KTORE MOZESZ PODNIESC SA ZAZNACZONE GWIAZDKA *"<<endl;
+    cout<<"STATYSTYKI BEDA WYSWIETLANE CALY CZAS NA EKRANIE"<<endl;
+    cout<<"STAN GRY NIE ZOSTAL ZAPISANY"<<endl;
+    cout<<"WCISNIJ ENTER ABY ZACZAC GRE";
+    getchar();
+    system("cls");
+    prolog_anna();
+    }
+    else
+    {
+        cout<<"NIE MA TAKIEGO WYBORU"<<endl;
+        getchar();
+        system("cls");
+        anna();
+    }
+}
+
+void wybor_postaci()
+{
+    char postac;
+ cout<<"NAJPIERW WYBIERZ W KOGO CHCESZ SIE WCIELIC:"<<endl;
+ cout<<"1.ANNA - KAPLANKA, DUZE OBRAZENIA FIZYCZNE, MALO ZDROWIA, ZDOLNOSC LECZENIA"<<endl;
+ cout<<"2.ROLAND - WOJOWNIK, MNIEJSZE OBRAZENIA FIZYCZNE, DUZO ZDROWIA, UMIEJETNOSC BLOKU CIOSU"<<endl;
+    postac=getch();
+
+    switch(postac)
+    {
+
+        case '1':
+            {
+            string yn;
+            cout<<"CZY JESTES TEGO PEWNY? Y/N"<<endl;
+            yn=getch();
+            transform(yn.begin(),yn.end(), yn.begin(),::toupper);
+            if (yn=="Y") {cout<<"A WIEC ZACZYNAJMY"; Sleep(1000); system("cls"); anna();}
+            else if (yn=="N") {system("cls"); wybor_postaci();}
+            else {cout<<"NIE MA TAKIEGO WYBORU"<<endl; getchar(); system("cls"); wybor_postaci();}
+            } break;
+        case '2':
+             {
+            string yn;
+            cout<<"CZY JESTES TEGO PEWNY? Y/N"<<endl;
+            yn=getch();
+            transform(yn.begin(),yn.end(), yn.begin(),::toupper);
+            if (yn=="Y") {cout<<"A WIEC ZACZYNAJMY"; Sleep(1000); system("cls"); roland();}
+            else if (yn=="N") {system("cls"); wybor_postaci();}
+            else {cout<<"NIE MA TAKIEGO WYBORU"<<endl; getchar(); system("cls"); wybor_postaci();}
+            } break;
+            default: {cout<<"NIE MA TAKIEGO WYBORU"<<endl; getchar(); system("cls"); wybor_postaci();} break;
+    }
+}
+
+
+int main()
+{
+
+
+    char wybor;
+
+    cout << "SUPER RPG v0.1 alfa" << endl;
+    cout << "1. NOWA GRA"<<endl;
+    cout << "2. WCZYTAJ GRE"<<endl;
+    cout << "3. O GRZE"<<endl;
+    cout << "4. AUTORZY"<<endl;
+    cout << "5. WYJSCIE"<<endl;
+
+    wybor=getch();
+
+    switch(wybor)
+    {
+       case '1': system("cls"); wybor_postaci(); break;
+       case '2':
+       case '3':
+        {
+            system("cls");
+            cout<<"JEST TO TEKSTOWA GRA RPG W KTOREJ WCIELASZ SIE W JEDNEGO Z DWOCH BOCHATEROW, ANNE BADZ ROLANDA"<<endl;
+            cout<<"MASZ DO POKONANIA WIELE PRZECIWNOSCI LOSU, TWOIM ZADANIEM JEST URATOWAC SWOJEGO DAWNEGO PRZYJACIELA OLGIERDA"<<endl;
+            cout<<"ZA KAZDEGO POKONANEGO PRZECIWNIKA DOSTAJESZ PUNKTY DOSWIADCZENIA. GDY ZDOBEDZIESZ ODPOWIEDNIA ILOSC AWANSUJESZ NA KOLEJNY POZIOM"<<endl;
+            cout<<"ZA KAZDY ZDOBYTY POZIOM POSTACI DOSTAJESZ 3 PUNKTY ULEPSZEN, KTORE BEDZIESZ MOGL WYKOZYSTAC NA ULEPSZENIE POSTACI"<<endl;
+            cout<<"ZAPISU STANU GRY BEDZIESZ MOGL DOKONYWAC W WYBRANYCH PRZEZ GRE MOMENTACH WIEC POSTARAJ SIE NIE ZGINAC PRZED KOLEJNYM PUNKTEM ZAPISU"<<endl;
+            cout<<"MYSLE ZE POWIEDZIALEM CI JUZ WSZYSTKO, A TERAZ WCISNIJ ENTER ABY POWROCIC DO MENU";
+            getchar(); system("cls"); main();
+        }
+        break;
+       case '4': system("cls"); cout<<"AUTOREM TEJ SWIETNEJ GRY JEST MACIEJ GRZEGRZOLKA"<<endl;  cout<<"WCISNIJ ENTER ABY POWROCIC DO MENU"; getchar(); system("cls"); main();
+       case '5': exit(0); break;
+
+    }
+
+    return 0;
+
+}
