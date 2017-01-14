@@ -5,12 +5,14 @@
 #include <conio.h>
 #include <math.h>
 #include <time.h>
+#include <string>
+#include <algorithm>
 
 using namespace std;
- int pieniadze=100;
+ float pieniadze=100;
 int granie()
 {
-    int kwota; char kon;  int wygrany; int przegrany;
+    float kwota; int kon;  int wygrany; int przegrany;
  if (pieniadze<=0)
  {
      cout<<"PRZEGRALES :<"<<endl;
@@ -34,10 +36,10 @@ int granie()
   cin>>kon;
   switch(kon)
   {
-    case '1':
-    case '2':
-    case '3':
-    case '4':
+    case 1:
+    case 2:
+    case 3:
+    case 4:
         {
          cout<<"PODAJ KWOTE PIENIEZNA"<<endl;
          cin>>kwota;
@@ -77,6 +79,10 @@ int granie()
                 getchar(); getchar();
                 system ("cls");
                 granie();
+            }
+            else
+            {
+                cout<<"huj i huj";
             }
 
          }
@@ -134,7 +140,7 @@ int main()
             system("cls");
           }
           break;
-      case '4': cout<<"Zegnaj"; Sleep(100); exit(0); break;
+      case '4': cout<<"Zegnaj"; Sleep(3000); exit(0); break;
       default:
         {
         cout<<"Nie ma takiego wyboru"<<endl;
