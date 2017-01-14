@@ -9,10 +9,10 @@
 #include <algorithm>
 
 using namespace std;
- float pieniadze=100;
+ int pieniadze=100;
 int granie()
 {
-    float kwota; int kon;  int wygrany; int przegrany;
+    int kwota; int kon;  int wygrany; int przegrany;
  if (pieniadze<=0)
  {
      cout<<"PRZEGRALES :<"<<endl;
@@ -122,7 +122,7 @@ int main()
             system("cls");
             cout<<"Masz na start 100 zlotych, ktore mozesz wydac na obstawienie dowolnego konia."<<endl;
             cout<<"Mozesz postawic tylko jednego konia"<<endl;
-            cout<<"Mozesz postawic na konia za dowolna kwote, byle bylaby to liczba calkowita"<<endl;
+            cout<<"Mozesz postawic na konia za dowolna kwote, byle bylaby to liczba dodatnia calkowita"<<endl;
             cout<<"Gdy kon na ktorego postawiles wygra, kwota postawiona przez Ciebie zostanie pomnozona"<<endl;
             cout<<"Gdy kon na ktorego postawiles przegra, kwota postawiona przez Ciebie zostanie odjeta"<<endl;
             cout<<"Baw sie dobrze ;)"<<endl;
